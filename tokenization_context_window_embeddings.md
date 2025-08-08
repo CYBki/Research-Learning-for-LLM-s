@@ -1,6 +1,3 @@
-# Bu doküman kimin için?
-Bu rehber, **module1_1.ipynb** not defterini temel alarak *sıfırdan* dil modellemenin en temel yapıtaşlarını öğrenmek isteyenler içindir. İçerikte notebook’taki akışı adım adım açıklar; kod parçacıkları ve görseller hangi kavramı somutladığını belirterek anlatılır.
-
 > Hedef: Bir metni nasıl **token**’lara çeviririz, bu token’lardan **girdi/çıktı örnekleri** (context windows) nasıl oluşturulur, **embedding** nedir ve gerçek bir modelin (Gemma) token gömme katmanını nasıl gözlemleriz — bunları kavramak.
 
 ---
