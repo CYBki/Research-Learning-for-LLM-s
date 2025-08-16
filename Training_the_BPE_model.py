@@ -439,4 +439,176 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
+
+
+
+
+"""
+=== BPE Tokenizer Training Demo ===
+
+1. Preparing training data...
+Downloading train.txt...
+Downloading from https://raw.githubusercontent.com/wojzaremba/lstm/master/data/ptb.train.txt...      
+Downloading... 100.0% (4 MB)
+Download completed.
+Downloading test.txt...
+Downloading from https://raw.githubusercontent.com/wojzaremba/lstm/master/data/ptb.test.txt...       
+Downloading... 100.1% (0 MB)
+Download completed.
+Downloading valid.txt...
+Downloading from https://raw.githubusercontent.com/wojzaremba/lstm/master/data/ptb.valid.txt...      
+Downloading... 100.4% (0 MB)
+Download completed.
+
+2. Collecting corpus (max 500,000 words)...
+Collected 500,000 words for training
+
+3. Training BPE tokenizer...
+Starting BPE training...
+Initializing vocabulary from corpus...
+Initialized with 9743 unique words and 49 characters
+Target vocabulary size: 5000
+Iteration 100: Merged '_' + 'r' -> '_r'
+Current vocabulary size: 149
+Iteration 200: Merged 'p' + 'p' -> 'pp'
+Current vocabulary size: 249
+Iteration 300: Merged '_wh' + 'o' -> '_who'
+Current vocabulary size: 349
+Iteration 400: Merged '_p' + 'o' -> '_po'
+Current vocabulary size: 449
+Iteration 500: Merged '_am' + 'eric' -> '_americ'
+Current vocabulary size: 549
+Iteration 600: Merged '_un' + 'it' -> '_unit'
+Current vocabulary size: 649
+Iteration 700: Merged '_execut' + 'ive' -> '_executive'
+Current vocabulary size: 749
+Iteration 800: Merged '_f' + 'our' -> '_four'
+Current vocabulary size: 849
+Iteration 900: Merged '_ne' + 'ed' -> '_need'
+Current vocabulary size: 949
+Iteration 1000: Merged 'v' + 'ing' -> 'ving'
+Current vocabulary size: 1049
+Iteration 1100: Merged '_bel' + 'ie' -> '_belie'
+Current vocabulary size: 1149
+Iteration 1200: Merged '_lond' + 'on' -> '_london'
+Current vocabulary size: 1249
+Iteration 1300: Merged '_in' + 'fl' -> '_infl'
+Current vocabulary size: 1349
+Iteration 1400: Merged '_or' + 'der' -> '_order'
+Current vocabulary size: 1449
+Iteration 1500: Merged '_sh' + 'ar' -> '_shar'
+Current vocabulary size: 1549
+Iteration 1600: Merged '_l' + 'ater' -> '_later'
+Current vocabulary size: 1649
+Iteration 1700: Merged 'if' + 'ied' -> 'ified'
+Current vocabulary size: 1749
+Iteration 1800: Merged '_sug' + 'gest' -> '_suggest'
+Current vocabulary size: 1849
+Iteration 1900: Merged '_us' + 'ing' -> '_using'
+Current vocabulary size: 1949
+Iteration 2000: Merged '_co' + 'up' -> '_coup'
+Current vocabulary size: 2049
+Iteration 2100: Merged '_be' + 'h' -> '_beh'
+Current vocabulary size: 2149
+Iteration 2200: Merged '_d' + 'on' -> '_don'
+Current vocabulary size: 2249
+Iteration 2300: Merged 'ac' + 'ed' -> 'aced'
+Current vocabulary size: 2349
+Iteration 2400: Merged '_surve' + 'y' -> '_survey'
+Current vocabulary size: 2449
+Iteration 2500: Merged '_tr' + 'y' -> '_try'
+Current vocabulary size: 2549
+Iteration 2600: Merged '_sus' + 'p' -> '_susp'
+Current vocabulary size: 2649
+Iteration 2700: Merged '_us' + 'ually' -> '_usually'
+Current vocabulary size: 2749
+Iteration 2800: Merged '_respon' + 'se' -> '_response'
+Current vocabulary size: 2849
+Iteration 2900: Merged 'ut' + 'ton' -> 'utton'
+Current vocabulary size: 2949
+Iteration 3000: Merged 'en' + 'cies' -> 'encies'
+Current vocabulary size: 3049
+Iteration 3100: Merged '_sug' + 'ar' -> '_sugar'
+Current vocabulary size: 3149
+Iteration 3200: Merged 'ar' + 'ies' -> 'aries'
+Current vocabulary size: 3249
+Iteration 3300: Merged '_gold' + 'man' -> '_goldman'
+Current vocabulary size: 3349
+Iteration 3400: Merged '_s' + 'y' -> '_sy'
+Current vocabulary size: 3449
+Iteration 3500: Merged '_h' + 'ands' -> '_hands'
+Current vocabulary size: 3549
+Iteration 3600: Merged '_unl' + 'ike' -> '_unlike'
+Current vocabulary size: 3649
+Iteration 3700: Merged '_cut' + 'ting' -> '_cutting'
+Current vocabulary size: 3749
+Iteration 3800: Merged '_sa' + 'w' -> '_saw'
+Current vocabulary size: 3849
+Iteration 3900: Merged '_cor' + 'ry' -> '_corry'
+Current vocabulary size: 3949
+Iteration 4000: Merged 'i' + 'os' -> 'ios'
+Current vocabulary size: 4049
+Iteration 4100: Merged '_suggest' + 'ed' -> '_suggested'
+Current vocabulary size: 4149
+Iteration 4200: Merged '_j' + 'ury' -> '_jury'
+Current vocabulary size: 4249
+Iteration 4300: Merged '_black' + 's' -> '_blacks'
+Current vocabulary size: 4349
+Iteration 4400: Merged '_circ' + 'um' -> '_circum'
+Current vocabulary size: 4449
+Iteration 4500: Merged '_arch' + 'it' -> '_archit'
+Current vocabulary size: 4549
+Iteration 4600: Merged '_widesp' + 'read' -> '_widespread'
+Current vocabulary size: 4649
+Iteration 4700: Merged '_read' + 'ing' -> '_reading'
+Current vocabulary size: 4749
+Iteration 4800: Merged '_reins' + 'urance' -> '_reinsurance'
+Current vocabulary size: 4849
+Iteration 4900: Merged '_account' + 'ed' -> '_accounted'
+Current vocabulary size: 4949
+BPE training completed with 4951 merges
+
+4. Saving tokenizer...
+Tokenizer saved to bpe_tokenizer.pkl
+
+5. Testing tokenization...
+
+Test sentence: 'Let's proceed to the language modeling part.'
+Tokenization results:
+  'Let's' -> ['_', '<UNK>', 'et', "'", 's']
+  'proceed' -> ['_proceed']
+  'to' -> ['_to']
+  'the' -> ['_the']
+  'language' -> ['_language']
+  'modeling' -> ['_model', 'ing']
+  'part.' -> ['_part', '.']
+
+Tokenization time: 0.0001 seconds
+Final vocabulary size: 5,000
+Number of merges learned: 4,951
+
+6. Testing save/load functionality...
+Tokenizer loaded from bpe_tokenizer.pkl
+Loaded tokenizer produces same results: True
+
+=== Training completed successfully! ===
+
+
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
