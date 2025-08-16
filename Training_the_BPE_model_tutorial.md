@@ -1,15 +1,15 @@
 # Byte Pair Encoding (BPE) Tokenization: Complete Guide
 
 ## 📚 Table of Contents
-1. [What is BPE?](#what-is-bpe)
-2. [Why Use BPE?](#why-use-bpe)
-3. [How Does BPE Algorithm Work?](#how-does-bpe-algorithm-work)
-4. [Code Implementation](#code-implementation)
-5. [Step-by-Step BPE Training](#step-by-step-bpe-training)
-6. [Tokenization Process](#tokenization-process)
-7. [Results Analysis](#results-analysis)
-8. [Practical Application](#practical-application)
-9. [Advanced Topics](#advanced-topics)
+1. [What is BPE?](#-what-is-bpe)
+2. [Why Use BPE?](#-why-use-bpe)
+3. [How Does BPE Algorithm Work?](#️-how-does-bpe-algorithm-work)
+4. [Code Implementation](#-code-implementation)
+5. [Step-by-Step BPE Training](#-step-by-step-bpe-training)
+6. [Tokenization Process](#-tokenization-process)
+7. [Results Analysis](#-results-analysis)
+8. [Practical Application](#-practical-application)
+9. [Advanced Topics](#-advanced-topics)
 
 ---
 
@@ -524,5 +524,5 @@ With this guide, you've learned BPE tokenization both theoretically and practica
 3. **SentencePiece**: Google's implementation
 4. **OpenAI GPT**: BPE usage examples
 5. **BERT Paper**: WordPiece variant explanation
-
+6. **Andriy Burkov**: The Hundred-Page Language Models Book_ Hands-on with PyTorch
 **Happy tokenizing!** 🎉
