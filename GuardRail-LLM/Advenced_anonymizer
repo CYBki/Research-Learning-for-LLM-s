@@ -1,5 +1,3 @@
-# app.py (Düzeltilmiş Hali)
-
 import re
 from faker import Faker
 # Pattern sınıfını da buradan import ediyoruz
