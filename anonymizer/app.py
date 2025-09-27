@@ -48,3 +48,19 @@ anonymized_result = anonymizer.anonymize(
 print("--- Anonimleştirilmiş Metin ---")
 print(anonymized_result.text)
 print("-" * 25)
+
+#############################################
+"""
+--- Orijinal Metin ---
+Hello my name is John Doe and my phone number is 532 123 4677 and email is someone@gmail.com
+-------------------------
+--- Bulunan Hassas Veriler (PII) ---
+Tip: EMAIL_ADDRESS, Metin: 'someone@gmail.com'
+Tip: PERSON, Metin: 'John Doe'
+Tip: PHONE_NUMBER, Metin: '532 123 4677'
+Tip: URL, Metin: 'gmail.com'
+-------------------------
+--- Anonimleştirilmiş Metin ---
+Hello my name is <KİŞİ> and my phone number is <TELEFON> and email is <E-POSTA>
+-------------------------
+"""
